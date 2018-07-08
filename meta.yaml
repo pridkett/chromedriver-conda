@@ -1,0 +1,20 @@
+package:
+  name: selenium-chromedriver
+  version: 2.40
+
+source:
+  fn: chromedriver_mac64.zip
+  url: https://chromedriver.storage.googleapis.com/2.40/chromedriver_mac64.zip
+  sha256: 3a5e47d7530923268e6ade36eb4647b6a327fc48c7a54e72d7ea67791a0cae29
+
+build:
+  number: 0
+  
+test:
+  commands:
+    - chromedriver --help
+
+about:
+  home: https://code.google.com/p/selenium/wiki/ChromeDriver
+  license: 3-Clause BSD
+  summary: ChromeDriver is a standalone server which implements WebDriver's wire protocol for Chromium.
